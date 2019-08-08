@@ -65,7 +65,7 @@ export default {
         if (fundingLevel) {
           list.push({
             symbol: 'dollar_negative',
-            size: '1.666',
+            size: (20 / 12),
             text: fundingLevel
           })
         }
@@ -73,7 +73,7 @@ export default {
       if (this.audience) {
         list.push({
           symbol: 'user',
-          size: '1.666',
+          size: (20 / 12),
           text: this.audience
         })
       }
@@ -112,7 +112,7 @@ export default {
       list.push({
         symbol: status === 'Closed' ? 'cross_circle' : 'success',
         color: status === 'Closed' ? 'danger' : 'success',
-        size: '0.8333',
+        size: status === 'Closed' ? (20 / 24) : 1,
         text: status
       })
 
